@@ -1,17 +1,24 @@
-// src/components/SignUp.js
+// SignUp.js
 import React, { useState } from 'react';
+import { signUpWithEmailAndPassword } from '../backend/Auth-signup'; // Correct import
 
-const SignUp = ({ signUpWithEmailAndPassword }) => {
+const SignUp = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSignUp = () => {
-    signUpWithEmailAndPassword(email, password);
+  const handleSignUp = async () => {
+    try {
+      await signUpWithEmailAndPassword(email, password);
+      // Handle successful signup (redirect, show message, etc.)
+    } catch (error) {
+      // Handle errors during signup
+      console.error('Error during signup:', error.message);
+    }
   };
 
   return (
     <div>
-      <h2>Sign Up</h2>
+      <h1>Sign Up</h1>
       <label>Email:</label>
       <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
       <label>Password:</label>

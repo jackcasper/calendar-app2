@@ -1,12 +1,22 @@
 // src/components/SignIn.js
 import React, { useState } from 'react';
+import { signInWithEmailAndPasswordFunction } from '../backend/Auth-signin'; // Import the signIn function
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
-const SignIn = ({ signInWithEmailAndPassword }) => {
+const SignIn = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate(); // Initialize useNavigate
 
-  const handleSignIn = () => {
-    signInWithEmailAndPassword(email, password);
+  const handleSignIn = async () => {
+    try {
+      await signInWithEmailAndPasswordFunction(email, password);
+      // If sign-in is successful, navigate to the next page
+      navigate('/dashboard'); // Change '/dashboard' to your desired route
+    } catch (error) {
+      // Handle the error or display an error message to the user
+      console.error('Error signing in:', error.message);
+    }
   };
 
   return (

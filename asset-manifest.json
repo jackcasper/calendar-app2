@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/jackcasper/calendar-app2/static/css/main.97e54fad.css",
+    "main.js": "/jackcasper/calendar-app2/static/js/main.b8b244a9.js",
+    "index.html": "/jackcasper/calendar-app2/index.html",
+    "main.97e54fad.css.map": "/jackcasper/calendar-app2/static/css/main.97e54fad.css.map",
+    "main.b8b244a9.js.map": "/jackcasper/calendar-app2/static/js/main.b8b244a9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97e54fad.css",
+    "static/js/main.b8b244a9.js"
+  ]
+}

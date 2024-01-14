@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/jackcasper/calendar-app2/static/css/main.97e54fad.css",
-    "main.js": "/jackcasper/calendar-app2/static/js/main.b8b244a9.js",
+    "main.css": "/jackcasper/calendar-app2/static/css/main.e6c13ad2.css",
+    "main.js": "/jackcasper/calendar-app2/static/js/main.ebcfdfbb.js",
     "index.html": "/jackcasper/calendar-app2/index.html",
-    "main.97e54fad.css.map": "/jackcasper/calendar-app2/static/css/main.97e54fad.css.map",
-    "main.b8b244a9.js.map": "/jackcasper/calendar-app2/static/js/main.b8b244a9.js.map"
+    "main.e6c13ad2.css.map": "/jackcasper/calendar-app2/static/css/main.e6c13ad2.css.map",
+    "main.ebcfdfbb.js.map": "/jackcasper/calendar-app2/static/js/main.ebcfdfbb.js.map"
   },
   "entrypoints": [
-    "static/css/main.97e54fad.css",
-    "static/js/main.b8b244a9.js"
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.ebcfdfbb.js"
   ]
 }
